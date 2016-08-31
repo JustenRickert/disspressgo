@@ -69,7 +69,7 @@ func firstLetterIs(this string, inThat string) bool {
 	return string(inThat[0]) == this
 }
 
-func writeDissociatively(file []string, i int) {
+func WriteDissociatively(file []string, i int) {
 	r := rand.New(rand.NewSource(int64(i))) // use r.Int() for random
 	inParens := false
 
@@ -102,10 +102,4 @@ func writeDissociatively(file []string, i int) {
 		}
 
 	}
-}
-
-func main() {
-	file := getSplitMoraFile()
-
-	writeDissociatively(file, 0)
 }

@@ -19,7 +19,7 @@ func file(dir string) []string {
 }
 
 // remove takes a []string and gives the same []string back with str removed
-func removeIfContains(file []string, str string) []string {
+func RemoveIfContains(file []string, str string) []string {
 	var indexesToDelete []int
 
 	for line, word := range file {
@@ -36,7 +36,7 @@ func removeIfContains(file []string, str string) []string {
 }
 
 // removes section of org file with tag
-func removeTag(file []string, tag string) []string {
+func RemoveTag(file []string, tag string) []string {
 	var indWithAst, indWithTag []int
 
 	// get Tag lines
